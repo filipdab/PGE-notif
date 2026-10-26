@@ -1,0 +1,11 @@
+[Unit]
+Description=PGE – sprawdzenie planowanych wyłączeń prądu
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Podmień UZYTKOWNIK na swoją nazwę użytkownika (np. pi)
+User=UZYTKOWNIK
+WorkingDirectory=/home/UZYTKOWNIK/pge_wylaczenia
+ExecStart=/usr/bin/python3 /home/UZYTKOWNIK/pge_wylaczenia/pge_wylaczenia.py

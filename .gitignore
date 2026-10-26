@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+pge_zrzut_*.json
+*.log

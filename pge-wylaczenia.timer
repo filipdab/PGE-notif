@@ -1,0 +1,10 @@
+[Unit]
+Description=PGE – sprawdzanie wyłączeń prądu co 30 minut
+
+[Timer]
+OnCalendar=*-*-* *:13,43
+RandomizedDelaySec=2min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
